@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  script(src='/javascripts/client.js')
+  style.
+    .color { background-color: #{color} }
+  h1= title
+  p Welcome to #{title}
+  
+  div.container
+    div.content
+      section.colored-block.color Your color
+      button.btn.btn-primary(onClick=('hitme("#{color}")')) Hit me!
